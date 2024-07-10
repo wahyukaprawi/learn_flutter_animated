@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '/pages/animated_builder.dart';
 import '/pages/animated_align.dart';
 import '/pages/animated_container.dart';
 import '/pages/animated_crossfade.dart';
@@ -62,6 +63,15 @@ class HomePage extends StatelessWidget {
                 () => const AnimatedPositionedPage(),
               ),
               child: const Text('Animated Positioned'),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () => Get.to(
+                () => AnimatedBuilderPage(),
+              ),
+              child: const Text('Animated Builder'),
             ),
           ],
         ),
