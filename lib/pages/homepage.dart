@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:learn_flutter_animated/pages/animated_align.dart';
 import 'package:learn_flutter_animated/pages/animated_container.dart';
 import 'package:learn_flutter_animated/pages/animated_crossfade.dart';
+import 'package:learn_flutter_animated/pages/animated_opacity.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -41,6 +42,15 @@ class HomePage extends StatelessWidget {
                 () => const AnimatedCrossfadePage(),
               ),
               child: const Text('Animated Cross Fade'),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () => Get.to(
+                () => const AnimatedOpacityPage(),
+              ),
+              child: const Text('Animated Opacity'),
             ),
           ],
         ),

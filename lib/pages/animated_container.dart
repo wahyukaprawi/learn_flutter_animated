@@ -8,7 +8,7 @@ class AnimatedContainerPage extends StatefulWidget {
 }
 
 class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
-  var isClick = false;
+  bool isClick = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

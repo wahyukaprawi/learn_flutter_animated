@@ -8,7 +8,7 @@ class AnimatedCrossfadePage extends StatefulWidget {
 }
 
 class _AnimatedCrossfadePageState extends State<AnimatedCrossfadePage> {
-  var isClick = false;
+  bool isClick = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
