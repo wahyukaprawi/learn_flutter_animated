@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:learn_flutter_animated/pages/animated_align.dart';
-import 'package:learn_flutter_animated/pages/animated_container.dart';
-import 'package:learn_flutter_animated/pages/animated_crossfade.dart';
-import 'package:learn_flutter_animated/pages/animated_opacity.dart';
+import '/pages/animated_align.dart';
+import '/pages/animated_container.dart';
+import '/pages/animated_crossfade.dart';
+import '/pages/animated_opacity.dart';
+
+import 'animated_positioned.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -51,6 +53,15 @@ class HomePage extends StatelessWidget {
                 () => const AnimatedOpacityPage(),
               ),
               child: const Text('Animated Opacity'),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () => Get.to(
+                () => const AnimatedPositionedPage(),
+              ),
+              child: const Text('Animated Positioned'),
             ),
           ],
         ),
