@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:learn_flutter_animated/pages/animated_align.dart';
 import 'package:learn_flutter_animated/pages/animated_container.dart';
+import 'package:learn_flutter_animated/pages/animated_crossfade.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -31,6 +32,15 @@ class HomePage extends StatelessWidget {
                 () => const AnimatedAlignPage(),
               ),
               child: const Text('Animated Align'),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () => Get.to(
+                () => const AnimatedCrossfadePage(),
+              ),
+              child: const Text('Animated Cross Fade'),
             ),
           ],
         ),
